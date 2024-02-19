@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Carousel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
+    
+    <style>
+       
+        nav{
+            background-color: black;
+            color:white;
+            padding:15px;
+        }
+
+        li,ul,h1{
+            display:inline;
+            cursor: pointer;
+            padding:10px;
+            font-size:20px;
+        }
+
+        ul{
+            margin-left:60%;
+        }
+
+        li:hover{
+            color:red;
+        }
+        
+        h2{
+   
+            color:red;
+            padding:10px;
+            font-size: 50px;
+        
+        }
+      
+        .carousel-inner img {
+            width: 100%;
+            height: 500px;
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+            background-color: #cc0000; 
+            color: white; 
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            font-size: 24px;
+            
+        }
+
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            background-color:green;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+   
+    <div class="header">
+        <nav class="navbar">
+
+            <h2><i>Travelog</i></h2>
+            
+            <ul>
+                <li>Home</li>
+                <li>Destinations</li>
+                <li>Tours</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="container mt-5">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel"  data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel"  data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="container">
+
+               <h2 style="text-align:center"><i>Adventure awaits just a click away!!!</i></h2>
+            </div>
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/dubai.jpg" alt="Image 1">
+                    <div class="carousel-caption">
+                        <h3 style="color:black ; font-size:30px font-weight: bold;"><i>Dubai</i></h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/marinabay.jpg" alt="Image 2">
+                    <div class="carousel-caption">
+                        <h3 style="color:black; font-size:30px"><i>Marina Bay</i></h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    
+                    <img src="images/burjtall.jpg" alt="Image 3">
+                    <div class="carousel-caption">
+                        <h3 style="color:black; font-size:30px"><i>Burj Khalifa</i></h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls button previous and next -->
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </div>
+
+   
+
+    
+</body>
+</html>
